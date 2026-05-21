@@ -93,7 +93,7 @@ foreach ($RegPath in $RegistryPaths) {
         foreach ($Scheme in $AllSchemes) {
             if ($ProtectedSchemes -notcontains $Scheme) {
                 Remove-ItemProperty -Path $RegPath -Name $Scheme -ErrorAction SilentlyContinue
-                Write-Host "    [✓] Hapus Skema Registry: '$Scheme'" -ForegroundColor Green
+                Write-Host "    [OK] Hapus Skema Registry: '$Scheme'" -ForegroundColor Green
             }
         }
     }
@@ -108,7 +108,7 @@ if (Test-Path $BaseCursorFolder) {
     foreach ($Folder in $TargetFolders) {
         if ($ProtectedFolders -notcontains $Folder.Name) {
             Remove-Item -Path $Folder.FullName -Recurse -Force -ErrorAction SilentlyContinue
-            Write-Host "    [✓] Hapus Folder Fisik: '$($Folder.Name)'" -ForegroundColor Green
+            Write-Host "    [OK] Hapus Folder Fisik: '$($Folder.Name)'" -ForegroundColor Green
         }
     }
 }
