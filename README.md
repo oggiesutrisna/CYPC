@@ -40,6 +40,16 @@ If PowerShell blocks the script because of your execution policy, run it with:
 powershell -ExecutionPolicy Bypass -File .\CYPC.ps1
 ```
 
+## Releases
+
+Official packaged versions of CYPC are available from the GitHub Releases page:
+
+```text
+https://github.com/oggiesutrisna/CYPC/releases
+```
+
+Use releases if you want a specific stable version instead of downloading the latest source from the repository. Each release may include the ready-to-run `CYPC.ps1` file and release notes describing what changed in that version.
+
 ## Important Notes
 
 This script deletes cache files, temporary files, recent file history, Recycle Bin contents, custom cursor registry entries, and custom cursor folders. Review the script before running it if you have custom cursor packs or cached data that you want to keep.
