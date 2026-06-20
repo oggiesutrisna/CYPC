@@ -1,6 +1,6 @@
 # CYPC
 
-CYPC is a Windows PowerShell cleanup script designed to remove common system clutter, temporary files, cache data, and leftover custom cursor entries from a Windows PC.
+CYPC is a Windows PowerShell cleanup script designed to remove common system clutter, temporary files, and cache data from a Windows PC.
 
 The script provides a simple terminal-based cleanup flow with status messages for each step. It focuses on clearing files and settings that can safely build up over time, including temporary folders, browser cache, GPU shader cache, Windows logs, DNS cache, and Recycle Bin contents.
 
@@ -12,9 +12,6 @@ The script provides a simple terminal-based cleanup flow with status messages fo
 - Clears Google Chrome and Microsoft Edge cache folders.
 - Removes selected Windows log files and Delivery Optimization data.
 - Clears Run history, Explorer typed paths, and recent files.
-- Resets the cursor scheme to the Windows default.
-- Removes custom cursor schemes while preserving built-in Windows cursor schemes.
-- Deletes custom cursor folders from `C:\Windows\Cursors` while preserving protected language folders.
 - Flushes the DNS client cache.
 - Empties the Recycle Bin.
 
@@ -52,7 +49,7 @@ Use releases if you want a specific stable version instead of downloading the la
 
 ## Important Notes
 
-This script deletes cache files, temporary files, recent file history, Recycle Bin contents, custom cursor registry entries, and custom cursor folders. Review the script before running it if you have custom cursor packs or cached data that you want to keep.
+This script deletes cache files, temporary files, recent file history, and Recycle Bin contents. Review the script before running it if you have cached data that you want to keep.
 
 Some operations may fail silently if a file is in use or if PowerShell does not have enough permissions. Running PowerShell as Administrator gives the script the best chance of completing all cleanup steps.
 
